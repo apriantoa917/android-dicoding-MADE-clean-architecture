@@ -4,7 +4,13 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.aprianto.cleanarchitecture.di.Injection
 import com.aprianto.cleanarchitecture.domain.MessageUseCase
-
+/*
+* TODO 10 :
+*  - untuk provide view model yang akan digunakan sesuai dengan keperluan parameter inputan
+*  - bisa menampung lebih dari 1 view model
+*  - constructor / parameter bisa berbeda dan bervariasi, tidak disarankan untuk request context sebagai parameter -> memory leak
+*  - berisikan instance untuk injeksi view model dengan dependency injection (DI)
+* */
 class MainViewModelFactory (
     private var messageUseCase: MessageUseCase
 ) : ViewModelProvider.NewInstanceFactory() {

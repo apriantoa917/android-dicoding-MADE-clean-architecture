@@ -6,7 +6,10 @@ import com.aprianto.cleanarchitecture.data.MessageRepository
 import com.aprianto.cleanarchitecture.domain.IMessageRepository
 import com.aprianto.cleanarchitecture.domain.MessageInteractor
 import com.aprianto.cleanarchitecture.domain.MessageUseCase
-
+/*
+* TODO 9 :
+*  - membuat dependency injection : untuk injeksi
+* */
 object Injection {
     fun provideUseCase(): MessageUseCase {
         val messageRepository = provideRepository()
